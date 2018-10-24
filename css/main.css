@@ -10,6 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
+/* Title Style */
+
 div.title {
 	text-align: center;
 	padding: 60px 0;
@@ -22,6 +24,18 @@ div.title h2 {
 	border: 1px solid #000;
 	display: inline-block;
 	padding: 0 10px;
+}
+
+/* Title RWD */
+
+@media only screen and (max-width: 480px) {
+	div.title {
+
+	}
+
+	div.title h2 {
+
+	}
 }
 
 /* Header Style */
@@ -250,11 +264,14 @@ div.sticky.visible {
 }
 
 /* Education Style */
+#education {
+	padding: 0 68px;
+}
+
 #education .education_timeline {
 	position: relative;
 	max-width: inherit;
 	margin: 0 auto;
-	padding: 0 68px;
 }
 
 #education .education_timeline::after {
@@ -335,7 +352,7 @@ div.sticky.visible {
 /* Education RWD */
 @media only screen and (max-width: 768px) {
 	#education .education_timeline::after {
-		left: 68px;
+		left: 0;
 	}
 
 	#education .education_item {
@@ -357,5 +374,11 @@ div.sticky.visible {
 
 	#education .right {
 		left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#education .education_item {
+		padding: 5px 0;
 	}
 }
