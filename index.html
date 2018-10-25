@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/plugins/bootstrap/bootstrap.min.css">
+	<!-- animate -->
+	<link rel="stylesheet" href="css/plugins/animate/animate.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="css/plugins/font-awesome/css/fontawesome-all.min.css">
 	<!-- custom style -->
@@ -51,15 +53,15 @@
 			<section id="about" class="about">
 				<div class="row">
 					<div class="col-md-5">
-						<div class="about_img">
-							<img src="images/I.jpg" class="img-thumbnail" alt="魏宗熙">
+						<div class="about_img wow fadeIn" data-wow-duration="2s">
+							<img src="images/I.jpg" class="img-thumbnail img-fluid" alt="魏宗熙">
 						</div>
 					</div>
 					<div class="col-md-7">
 						<div class="row about_details">
-							<h3>我的基本資料</h3>
+							<h3 class="wow slideInUp">我的基本資料</h3>
 							<div class="my_information">
-								<table>
+								<table class="wow slideInUp">
 									<tr>
 										<td><i class="fas fa-user"></i></td>
 										<td>姓名</td>
@@ -93,7 +95,7 @@
 			</section>
 
 			<section id="skill" class="skill">
-				<div class="title">
+				<div class="title wow slideInUp" data-wow-duration="2s">
 					<h2>我的專長</h2>
 				</div>
 
@@ -177,12 +179,12 @@
 			</section>
 
 			<section id="education" class="education">
-				<div class="title">
+				<div class="title wow slideInUp">
 					<h2>求學歴程</h2>
 				</div>
 
 				<div class="education_timeline">
-					<div class="education_item left">
+					<div class="education_item left wow slideInUp">
 						<div class="content">
 							<h3>2014~2018</h3>
 							<p>台中科技大學 - 資訊管理系</p>
@@ -194,7 +196,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="education_item right">
+					<div class="education_item right wow slideInUp">
 						<div class="content">
 							<h3>2009~2013</h3>
 							<p>斗六高級家事商業職業學校 - 資料處理科</p>
@@ -203,7 +205,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="education_item left">
+					<div class="education_item left wow slideInUp">
 						<div class="content">
 							<h3>2006~2009</h3>
 							<p>西螺國民中學</p>
@@ -212,7 +214,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="education_item right">
+					<div class="education_item right wow slideInUp">
 						<div class="content">
 							<h3>2000~2006</h3>
 							<p>中山國民小學</p>
@@ -223,12 +225,17 @@
 					</div>
 				</div>
 			</section>
+
+			<section id="portfolio" class="portfolio">
+				
+			</section>
 		</div>
 	</div>
 	
 	<!-- scripts -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="js/plugins/wow/wow.min.js"></script>
 	<script src="js/plugins/waypoint/jquery.waypoints.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

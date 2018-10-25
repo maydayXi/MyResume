@@ -43,6 +43,7 @@ div.title h2 {
 	background-color: #fec608;
 	line-height: 24px;
 	margin: 0;
+	padding: 10px 16px;
 }
 
 .navbar-light .navbar-toggler {
@@ -171,12 +172,17 @@ div.title h2 {
 }
 
 @media only screen and (max-width: 480px) {
+	#about .row {
+		margin: 0 -30px;
+	}
+
 	#about .about_details h3 {
 		font-size: 2.3rem;
 	}
 
 	#about .my_information table {
 		width: 100%;
+		font-size: 1rem;
 	}
 }
 
@@ -219,6 +225,17 @@ div.title h2 {
 
 #skill .skill_item .progress span {
 	display: none;
+}
+
+/* SKill RWD */
+@media only screen and (max-width: 480px) {
+	#skill .skill_text h4 {
+		font-size: 1.8rem;
+	}
+
+	#skill .skill_item .progress .progress-bar {
+		font-size: 1rem;
+	}
 }
 
 @-webkit-keyframes progress {
