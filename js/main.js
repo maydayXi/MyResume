@@ -11,7 +11,7 @@ $(function () {
 
 		var $anchor = $(this);
 				$target = $anchor.find('a').attr('href');
-				headerHeight = $('header').outerHeight();
+				headerHeight = window.innerWidth <= 480? 56:$('header').outerHeight();
 
 		$anchor.siblings().removeClass('active');
 		$anchor.addClass('active');
