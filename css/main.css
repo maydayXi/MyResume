@@ -567,9 +567,45 @@ div.title h2 {
 }
 
 /* Portfolio RWD */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
 	#portfolio .tabs_nav li {
 		width: 100%;
 	}
 }
 
+/* License Style */
+#license {
+	padding: 0 68px;
+	padding-bottom: 32px;
+}
+
+#license .gallery {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#license .gallery .gallery_item {
+	list-style: none;
+	margin-top: 10px;
+	width: 30%;
+	margin-left: 1rem;
+}
+
+/* License RWD */
+@media only screen and (max-width: 768px) {
+	#license .gallery .gallery_item {
+		width: 45%;
+	}
+}
+
+/* Footer Style */
+footer {
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	background: #333;
+	padding: 20px 0;
+	color: #fff;
+	text-align: center;
+}

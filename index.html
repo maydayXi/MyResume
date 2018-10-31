@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="css/plugins/font-awesome/css/fontawesome-all.min.css">
 	<!-- jqury ui -->
 	<!-- <link rel="stylesheet" href="css/plugins/jquery-ui/jquery-ui.min.css"> -->
+	<!-- fancybox -->
+	<link rel="stylesheet" href="css/plugins/fancybox/jquery.fancybox.min.css">
 	<!-- custom style -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -43,6 +45,9 @@
 		      </li>
 		      <li class="nav-item">
 		      	<a class="nav-link" href="#portfolio">我的作品</a>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link" href="#license">我的證照</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -243,7 +248,7 @@
 				</div>
 				<div class="portfolio_panel">
 					<div id="web" class="tabs_panel">
-						<div class="card col-md-4 wow slideInUp">
+						<div class="card col-md-4 col-sm-6 wow slideInUp">
 							<a href="https://maydayxi.github.io/GreenPeaceDemo/index.html" target="_blank">
 								<img src="images/greenpeace_logo.png" class="img-fluid">
 								<span class="see_more">
@@ -259,25 +264,68 @@
 						</div>
 					</div>
 					<div id="android" class="tabs_panel">
-						android
+						android 更新中
 					</div>
 					<div id="python" class="tabs_panel">
-						python
+						python 更新中
 					</div>
 				</div>
 			</section>
+
+			<section id="license" class="license">
+				<div class="title wow slideInUp">
+					<h2>我的證照</h2>
+				</div>
+				<div class="license_content">
+					<ul class="gallery">
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/diploma.jpg" data-fancybox="license_item" data-caption="臺中科技大畢業證書">
+								<img src="images/diploma.jpg" alt="畢業證書" class="img-fluid">
+							</a>
+						</li>
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/intern.jpg" data-fancybox="license_item" data-caption="采威科技實習證書">
+								<img src="images/intern.jpg" alt="實書證書" class="img-fluid">
+							</a>
+						</li>
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/Google Partners - Certification.jpg" data-fancybox="license_item" data-caption="Google AdWords">
+								<img src="images/Google Partners - Certification.jpg" alt="Google 廣告搜尋證照" class="img-fluid">
+							</a>
+						</li>
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/volunteer.jpg" data-fancybox="license_item" data-caption="臺中燈會志工證書">
+								<img src="images/volunteer.jpg" alt="台中燈會志工證書" class="img-fluid">
+							</a>
+						</li>
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/ERP_license.jpg" data-fancybox="license_item" data-caption="ERP 軟體應用師">
+								<img src="images/ERP_license.jpg" alt="ERP 證照" class="img-fluid">
+							</a>
+						</li>
+						<li class="gallery_item wow fadeIn" data-wow-duration="1.5s">
+							<a href="images/TQC_license.jpg" data-fancybox="license_item" data-caption="TQC PowerPoint Professional">
+								<img src="images/TQC_license.jpg" alt="TQC PPT" class="img-fluid">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
 		</div>
 	</div>
 
 	<footer>
-		
+		2018 ALL Copy Rights Reserved &copy; 
 	</footer>
 	
 	<!-- scripts -->
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/plugins/masonry/masonry.pkgd.min.js"></script>
 	<script src="js/plugins/bootstrap/bootstrap.min.js"></script>
 	<script src="js/plugins/wow/wow.min.js"></script>
 	<script src="js/plugins/waypoint/jquery.waypoints.min.js"></script>
+	<script src="js/plugins/fancybox/jquery.fancybox.min.js"></script>
 	<script src="js/plugins/jqueyr-ui/jquery-ui.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

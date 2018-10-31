@@ -11,7 +11,7 @@ $(function () {
 
 		var $anchor = $(this);
 				$target = $anchor.find('a').attr('href');
-				headerHeight = window.innerWidth <= 480? 56:$('header').outerHeight();
+				headerHeight = window.innerWidth < 1000? 56:$('header').outerHeight();
 
 		$anchor.siblings().removeClass('active');
 		$anchor.addClass('active');
@@ -40,5 +40,12 @@ $(function () {
 		$(this).siblings('li').find('a').removeClass('active');
 		$(this).find('a').addClass('active');
 	});
+
+	$('#license .license_content .gallery').masonry({
+		// columnWidth: '.grid_sizer',
+		gutter: 5,
+		itemSelector: '.gallery_item'
+	});
+
 
 });
