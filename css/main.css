@@ -579,34 +579,9 @@ div.title h2 {
 	padding-bottom: 32px;
 }
 
-#license .gallery {
-	width: 90%;
-	margin: 0 auto;
-	padding: 0;
-}
-
-#license .gallery .gallery_item {
-	list-style: none;
-	margin-top: 10px;
-	width: 30%;
-	margin-left: 1rem;
-}
-
-/* License RWD */
-@media only screen and (max-width: 768px) {
-	#license .gallery .gallery_item {
-		width: 45%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	#license .gallery {
-		width: 100%;
-	}
-	
-	#license .gallery .gallery_item {
-		margin-left: .5rem; 
-	}
+#license .owl-carousel .owl-stage { 
+	display: flex; 
+	align-items: center; 
 }
 
 /* Footer Style */

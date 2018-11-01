@@ -41,11 +41,23 @@ $(function () {
 		$(this).find('a').addClass('active');
 	});
 
-	$('#license .license_content .gallery').masonry({
-		// columnWidth: '.grid_sizer',
-		gutter: 5,
-		itemSelector: '.gallery_item'
+	$('#license .license_content .owl-carousel').owlCarousel({
+		center: true,
+		items: 2,
+		loop: true,
+		margin: 15,
+		autoplay: true,
+		autoplayTimeout: 1500,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			800: {
+				items: 4
+			}
+		}
 	});
-
-
 });
