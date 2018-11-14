@@ -221,6 +221,7 @@ div.title h2 {
 	background: #fec608;
 	font-size: 1.2rem;
 	text-align: right;
+	display: inline-block;
 }
 
 #skill .skill_item .progress span {
