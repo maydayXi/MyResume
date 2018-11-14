@@ -24,6 +24,10 @@ $(function () {
 
 	});
 
+	$('span.counter').counterUp({
+		time: 2000
+	});
+
 	$('.progress-bar').waypoint(function () {
 		$('.progress-bar').css({
 			animation: 'progress 1.5s forwards'
@@ -42,21 +46,20 @@ $(function () {
 	});
 
 	$('#license .license_content .owl-carousel').owlCarousel({
-		center: true,
 		items: 2,
 		loop: true,
 		margin: 15,
 		autoplay: true,
-		autoplayTimeout: 1500,
+		autoplayTimeout: 3000,
 		responsive: {
 			0: {
 				items: 1
 			},
 			600: {
-				items: 2
+				items: 3
 			},
 			800: {
-				items: 4
+				items: 5
 			}
 		}
 	});
