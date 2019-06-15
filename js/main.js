@@ -24,10 +24,6 @@ $(function () {
 
 	});
 
-	$('span.counter').counterUp({
-		time: 2000
-	});
-
 	$('.progress-bar').waypoint(function () {
 		$('.progress-bar').css({
 			animation: 'progress 1.5s forwards'
