@@ -505,6 +505,8 @@ div.title h2 {
 
 #portfolio .portfolio_panel .card {
 	padding: 0;
+	margin: 0 5px;
+	height: 75%;
 	-webkit-transition: all .2s ease-in;
 	-o-transition: all .2s ease-in;
 	transition: all .2s ease-in;
