@@ -575,6 +575,8 @@ div.title h2 {
 
 #portfolio .portfolio_panel .card a.none {
 	height: auto;
+	text-decoration: none;
+	color: #000;
 }
 #portfolio .portfolio_panel .card a.none::after {
 	content: none;
@@ -582,6 +584,10 @@ div.title h2 {
 #portfolio .portfolio_panel .card a.none:hover .card-body{}
 #portfolio .portfolio_panel .card a.none:hover .see_more{}
 #portfolio .portfolio_panel .card a.none:hover::after {}
+
+#portfolio .portfolio_panel .card a.none span.fec608 {
+	color: #fec608;
+}
 
 /* Portfolio RWD */
 @media only screen and (max-width: 576px) {
