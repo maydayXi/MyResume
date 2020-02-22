@@ -503,6 +503,10 @@ div.title h2 {
 	background: #efefef;
 }
 
+#portfolio .portfolio_panel .row {
+	flex-wrap: nowrap;
+}
+
 #portfolio .portfolio_panel .card {
 	padding: 0;
 	margin: 0 5px;
@@ -568,6 +572,10 @@ div.title h2 {
 #portfolio .portfolio_panel .card a:hover::after {
 	top: 0;
 }
+
+#portfolio .portfolio_panel .card a.none::after {}
+
+#portfolio .portfolio_panel .card a.none:harvor {}
 
 /* Portfolio RWD */
 @media only screen and (max-width: 576px) {
