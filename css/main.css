@@ -503,7 +503,7 @@ div.title h2 {
 	background: #efefef;
 }
 
-#portfolio .portfolio_panel .row {
+#portfolio .portfolio_panel #android {
 	flex-wrap: nowrap;
 }
 
@@ -573,9 +573,15 @@ div.title h2 {
 	top: 0;
 }
 
-#portfolio .portfolio_panel .card a.none::after {}
-
-#portfolio .portfolio_panel .card a.none:harvor {}
+#portfolio .portfolio_panel .card a.none {
+	height: auto;
+}
+#portfolio .portfolio_panel .card a.none::after {
+	content: none;
+}
+#portfolio .portfolio_panel .card a.none:hover .card-body{}
+#portfolio .portfolio_panel .card a.none:hover .see_more{}
+#portfolio .portfolio_panel .card a.none:hover::after {}
 
 /* Portfolio RWD */
 @media only screen and (max-width: 576px) {
