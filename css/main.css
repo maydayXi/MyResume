@@ -640,7 +640,7 @@ div.title h2 {
 
 	#portfolio .portfolio_panel .card {
 		width: 100%;
-		height: 40%;
+		height: 30%;
 		margin-bottom: 5px;
 		margin-left: 2px;
 		margin-right: 2px;
@@ -652,12 +652,6 @@ div.title h2 {
 }
 
 @media only screen and (max-width: 360px) {
-
-	#portfolio .portfolio_panel .card {
-		width: 100%;
-		height: 30%;
-		margin: none;
-	}
 
 	#portfolio .portfolio_panel .card .card-title {
 		font-size: 1rem;
@@ -680,6 +674,17 @@ div.title h2 {
 	#license {
 		position: relative;
 		margin-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#license {
+		top: 2rem;
+	}
+	
+	#license .title {
+		padding: 2rem 0;
+		margin: 2rem 0;
 	}
 }
 
