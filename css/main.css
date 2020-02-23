@@ -503,7 +503,9 @@ div.title h2 {
 	background: #efefef;
 }
 
-#portfolio .portfolio_panel #android {
+#portfolio .portfolio_panel #android,
+#portfolio .portfolio_panel #web,
+#portfolio .portfolio_panel #python {
 	flex-wrap: nowrap;
 }
 
@@ -590,9 +592,62 @@ div.title h2 {
 }
 
 /* Portfolio RWD */
+@media only screen and (max-width: 762px) {
+	#portfolio .portfolio_panel .card .card-title {
+		font-size: 1.5rem;
+	}
+}
+
 @media only screen and (max-width: 576px) {
+
 	#portfolio .tabs_nav li {
 		width: 100%;
+	}
+
+	#portfolio .portfolio_panel #android,
+	#portfolio .portfolio_panel #web,
+	#portfolio .portfolio_panel #python {
+		flex-wrap: wrap;
+		height: 100vh;
+	}
+
+	#portfolio .portfolio_panel .card {
+		width: 45%;
+		height: 50%;
+		margin-bottom: 5px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	#portfolio .portfolio_panel .card .card-body {
+		padding: .7rem;
+	}
+
+	#portfolio .portfolio_panel .card .card-title {
+		font-size: 1.1rem;
+	}
+
+	#portfolio .portfolio_panel .card .card-text {
+		font-size: .9rem;
+	}
+
+	#portfolio .portfolio_panel .card a.none {
+		font-size: .7rem;
+	}	
+}
+
+@media only screen and (max-width: 480px) {
+
+	#portfolio .portfolio_panel .card {
+		width: 100%;
+		height: 40%;
+		margin-bottom: 5px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	#portfolio .portfolio_panel .card .card-title {
+		font-size: 1rem;
 	}
 }
 
@@ -605,6 +660,14 @@ div.title h2 {
 #license .owl-carousel .owl-stage { 
 	display: flex; 
 	align-items: center; 
+}
+
+/* License RWD */
+@media only screen and (max-width: 576px) {
+	#license {
+		position: relative;
+		margin-top: 4rem;
+	}
 }
 
 /* Footer Style */
