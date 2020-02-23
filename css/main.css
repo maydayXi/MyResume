@@ -688,6 +688,19 @@ div.title h2 {
 	}
 }
 
+@media only screen and (max-width: 360px) {
+	#license {
+		top: 2rem;
+	}
+	
+	#license .title {
+		position: relative;
+		top: 1rem;
+		padding: 1rem 0;
+		margin: 1rem 0;
+	}
+}
+
 /* Footer Style */
 footer {
 	display: inline-block;
