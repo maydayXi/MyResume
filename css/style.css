@@ -1,0 +1,342 @@
+/* Colors */
+:root {
+	--Mobster: #5A585D;
+	--Fallow: #BF9B73;
+	--Whisper: #EAEAEA;
+	--Mischka: #A7AAAF;
+}
+
+* {
+	font-family: "Microsoft JhengHei";
+	position: relative;
+	box-sizing: border-box;
+	/* border: 1px solid #000; */
+}
+
+html, body {
+	margin: 0; padding: 0;
+}
+
+body {
+	padding: 1rem 0;
+}
+
+#Resume {
+	display: inline-block;
+	width: 100%;
+	max-width: 800px;
+	background-color: var(--Mobster);
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 8px;
+	box-shadow: 0 0 .8rem rgba(0, 0, 0, .4);
+	padding: 2rem 0;
+	user-select: none;
+}
+
+#Resume .title {
+	font-weight: bolder;
+	color: var(--Fallow);
+	letter-spacing: 3px;
+	padding: 0 0.5rem;
+}
+
+/* Header */
+#Header .photo {
+	width: 200px; height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url('https://i.imgur.com/mFw0CGG.jpg');
+	background-size: cover;
+}
+
+#Content .mid-line {
+	position: absolute;
+	top: 0; left: calc(50% - 3px);
+	display: inline-block;
+	width: 6px; height: 100%;
+	background-color: var(--Whisper);
+}
+
+#Content .mid-line::after {
+	content: "";
+	display: inline-block;
+	width: 26px; height: 26px;
+	background-color: var(--Whisper);
+	position: absolute;
+	bottom: -13px; left: -10px;
+	border-radius: 50%;
+}
+
+#Content .bottom-line {
+	display: inline-block;
+	height: 6px;
+	position: absolute;
+	background-color: var(--Whisper);
+}
+
+#Education, #Skill, #About, #Experience, #Software {
+	padding: 1rem 0;
+}
+
+/* Content */
+#Content {
+	color: var(--Whisper);
+}
+
+/* Education */
+#Education .content .date,
+#Education .content .school {
+	letter-spacing: 2px;
+	line-height: 1.5rem;
+}
+
+#Education .bottom-line {
+	width: 80%;
+	right: -0.75rem;
+	bottom: -6px;
+}
+
+#Education .bottom-line::after {
+	content: "";
+	display: inline-block;
+	width: 24px; height: 24px;
+	position: absolute;
+	left: -12px; top: -9px;
+	border-radius: 50%;
+	background-color: var(--Fallow);
+}
+
+/* Skill */
+#Skill .content p {
+	letter-spacing: 1.5px;
+}
+
+#Skill .skill-title {
+	letter-spacing: 1px;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+#Skill .content .skill-progress {
+	height: 20px;
+	border: 2px solid var(--Whisper);
+	padding: 2px;
+}
+
+#Skill .content .skill-progress::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 12px;
+	background-color: var(--Whisper);
+}
+
+#Skill .content .progress-html::after {
+	width: 80%;
+}
+
+#Skill .content .progress-css::after {
+	width: 80%;
+}
+
+#Skill .content .progress-js::after {
+	width: 75%;
+}
+
+#Skill .content .progress-java::after {
+	width: 70%;
+}
+
+#Skill .content .progress-csharp::after {
+	width: 70%;
+}
+
+#Skill .content .progress-python::after {
+	width: 65%;
+}
+
+#Skill .content .progress-sql::after {
+	width: 60%;
+}
+
+/* About */
+#About .bottom-line {
+	width: 60%;
+	left: -0.75rem;
+	bottom: -6px;
+}
+
+#About .bottom-line::after {
+	content: "";
+	position: absolute;
+	right: -12px; top: -10px;
+	display: inline-block;
+	width: 24px; height: 24px;
+	border-radius: 50%;
+	background-color: var(--Mischka);
+}
+
+#About a {
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: var(--Fallow);
+}
+
+#About .name,
+#About .english-name {
+	font-weight: bolder;
+}
+
+#About .name {
+	letter-spacing: 4px;
+	padding: 0 0.5rem;
+}
+
+#About .english-name {
+	letter-spacing: 3px;
+	padding-left: 1rem;
+}
+
+#About .row .col-md-5,
+#About .row .col-md-7 {
+	color: var(--Fallow);
+	line-height: 2.3rem;
+}
+
+#About .row .col-md-5 {
+	letter-spacing: 2px;
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+#About .row .col-md-7 {
+	letter-spacing: .5px;
+}
+
+#About .row .col-md-5 i {
+	margin-left: 0.5rem;
+	width: 1.5rem;
+}
+
+/* Experience */
+#Experience .bottom-line {
+	width: 80%;
+	left: -0.75rem;
+	bottom: -6px;
+}
+
+#Experience .bottom-line::after {
+	content: "";
+	position: absolute;
+	right: -12px; top: -10px;
+	display: inline-block;
+	width: 24px; height: 24px;
+	background-color: var(--Fallow);
+	border-radius: 50%;
+}
+
+#Experience .content .date,
+#Experience .content .detail {
+	letter-spacing: 2px;
+}
+
+/* Software */
+#Software p {
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+#Software svg {
+	transform: rotate(-90deg);
+}
+
+#Software svg circle {
+	fill: var(--Mobster);
+	stroke: var(--Whisper);
+	stroke-width: 6;
+}
+
+#Software svg circle.software-progress {
+	fill: none;
+	stroke: var(--Fallow);
+	stroke-width: 6;
+	stroke-dasharray: 100;
+}
+
+#Software svg circle.progress-as,
+#Software svg circle.progress-vs {
+	stroke-dashoffset: 35;
+}
+
+#Software svg circle.progress-word,
+#Software svg circle.progress-excel {
+	stroke-dashoffset: 20;
+}
+
+#Software svg text {
+	fill: var(--Whisper);
+	text-anchor: middle;
+	writing-mode: tb;
+}
+
+/* Large size */
+@media screen and (max-width: 992px) {
+	#About .row .col-md-5 {
+		letter-spacing: 1px;
+	}
+
+	#About .row .col-md-5 i {
+		margin-left: 0 !important;
+	}
+
+	#About .row .col-md-7 {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 0;
+	}
+
+	#Resume {
+		border-radius: 0;
+	}
+
+	#Resume .title {
+		text-align: center !important;
+	}
+
+	#Content .mid-line {
+		display: none;
+	}
+
+	#About .col-md-12 {
+		text-align: center;
+	}
+
+	#About .row .col-md-7 {
+		padding-left: .75rem;
+	}
+
+	#Education .date {
+		text-align: left !important;
+	}
+
+	#Skill .content p.fw-bold {
+		text-align: center !important;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#About .row .col-md-5 {
+		text-align: center;
+	}
+	#About .row .col-md-5 span {
+		display: none;
+	}
+}
