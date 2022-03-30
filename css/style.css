@@ -315,6 +315,10 @@ body {
 		display: none;
 	}
 
+	#Content .bottom-line {
+		display: none;
+	}
+
 	#About .col-md-12 {
 		text-align: center;
 	}
