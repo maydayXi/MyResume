@@ -344,3 +344,21 @@ body {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	#About .row .col-4 {
+		width: 16.66667%;
+	}
+
+	#About .row .col-6 {
+		width: 58.3333%;
+	}
+
+	#Experience .row .col-6 {
+		width: 58.3333%;
+	}
+
+	#Experience .row .offset-3 {
+		margin-left: 16.6667%;
+	}
+}
